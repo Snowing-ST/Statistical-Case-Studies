@@ -3,14 +3,20 @@ feng.li课程作业
 
 ## [Lab1](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab1.ipynb)
 1. 读取文本数据、文本数据预处理、统计词频、保存词频表至csv
-    1.1 Read a text file
+    1.1 Read a text file
+    
     1.2 Do the necessary cleaning
+    
     1.3 Convert to other format（word count）
+    
     1.4 Export to csv format
 2. 读取鸢尾花数据、描述统计、scipy做线性代数运算
     2.1 Read a csv flie
+    
     2.2 Do the description（不使用np、pd的描述统计）
+    
     2.3 Convert it to dataframe
+    
     2.4 Try some linear algebra（用scipy做矩阵转置、逆、行列式值、最小二乘、广义逆、特征值与特征向量）
 
 ## [Lab2](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab2.ipynb)
