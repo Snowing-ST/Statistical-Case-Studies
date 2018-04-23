@@ -41,7 +41,7 @@ feng.li课程作业
 
 ## [Lab4](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab4.ipynb)
 
-- <center>**搜索并保存“中美贸易战”不同时间发布的新闻，用jieba提取关键词**</center>
+- **搜索并保存“中美贸易战”不同时间发布的新闻，用jieba提取关键词**
 
 1. 批量读取文件
 2. 提取所有文本数据
