@@ -50,3 +50,12 @@ feng.li课程作业
 5. 添加自定义词汇jieba.add_word
 6. 去除字母、数字、标点、停用词
 7. 提取关键词jieba.analyse.extract_tags
+
+## [Lab5](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/newsSpider/newsSpider/spiders)
+
+- **新浪搜索scrapy spider**
+1. [TradeWar.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/newsSpider/newsSpider/spiders/TradeWar.py):爬取搜索列表上的新闻详细内容
+
+2. [TradeWarList.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/newsSpider/newsSpider/spiders/TradeWarList.py):爬取搜索列表上的新闻摘要
+
+3. 修改了middlewares.py/items.py/settings.py
