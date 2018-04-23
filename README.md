@@ -30,7 +30,7 @@ feng.li课程作业
 
 ## [Lab3](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab3.ipynb)
 
-- 用nltk和re做英文文本处理
+- **用nltk和re做英文文本处理**
 
 1. 爬取新华网Business - Finance类别的新闻url  requests.get+json.loads
 2. 对每个url，爬取新闻标题及内容xpath
@@ -41,7 +41,7 @@ feng.li课程作业
 
 ## [Lab4](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab4.ipynb)
 
-- 搜索并保存“中美贸易战”不同时间发布的新闻，用jieba提取关键词
+- <center>**搜索并保存“中美贸易战”不同时间发布的新闻，用jieba提取关键词**</center>
 
 1. 批量读取文件
 2. 提取所有文本数据
