@@ -26,7 +26,7 @@ feng.li课程作业
     - 2.2 去掉只有\n的空行，得到段落
     - 2.3 按照句号和感叹号分隔，去掉\n和空格，得到句子
     - 2.4 利用python正则表达式去除标点符号、数字、英文字母re.sub
-    - 2.5 逐行写入txt、csv文件
+    - 2.5 逐行写入txt、csv文件
 
 ## [Lab3](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab3.ipynb)
 
@@ -53,9 +53,16 @@ feng.li课程作业
 
 ## [Lab5](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/newsSpider/newsSpider/spiders)
 
-- **新浪搜索scrapy spider**
+- **新浪新闻搜索scrapy spider**
 1. [TradeWar.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/newsSpider/newsSpider/spiders/TradeWar.py):爬取搜索列表上的新闻详细内容
 
 2. [TradeWarList.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/newsSpider/newsSpider/spiders/TradeWarList.py):爬取搜索列表上的新闻摘要
 
 3. 修改了middlewares.py/items.py/settings.py
+
+## [Lab6](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab6%20Scraping%20with%20xpath)
+
+1. [TradeWarCrawl.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab6%20Scraping%20with%20xpath/TradeWarCrawl.py)
+: 改写Lab5，多个不同搜索关键字并行爬取
+
+2. [TradeWarCrawl - class.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab6%20Scraping%20with%20xpath/TradeWarCrawl%20-%20class.py): 改成类的形式，但不能并行爬取新闻
