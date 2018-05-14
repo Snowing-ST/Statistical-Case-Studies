@@ -39,6 +39,7 @@ feng.li课程作业
 5. 生成文本词频矩阵sklearn.feature_extraction.text.CountVectorizer  
 6. 根据词频绘制词云图wordcloud
 
+ ![词云图](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab7%20ZTE%20Events%20Text%20Analysis/%E8%AF%8D%E4%BA%91%E5%9B%BE/period_1_wordcloud.jpg)
 ## [Lab4](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab4.ipynb)
 
 - **搜索并保存“中美贸易战”不同时间发布的新闻，用jieba提取关键词**
