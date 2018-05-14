@@ -72,6 +72,6 @@ feng.li课程作业
 - [preprocess.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab7%20ZTE%20Events%20Text%20Analysis/preprocess.py):对爬取的数据作文本预处理，提取词频，绘制词云图
 ## [Lab8](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab8%20Probabilistic-Language-Modeling)
 - **对爬取的新闻文本建立Ngram模型和word2vec模型**
-1. [Ngram+word2vec](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab8%20Probabilistic-Language-Modeling/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab8.ipynb)
+1. [Ngram+word2vec](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab8%20Probabilistic-Language-Modeling/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab8.ipynb)
 1. 利用Nram模型提取二元词频、并对新闻按时间段分类
 2. 利用word2vec作简单的语义相似度探索
