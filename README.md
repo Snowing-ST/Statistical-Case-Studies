@@ -39,7 +39,11 @@ feng.li课程作业
 5. 生成文本词频矩阵sklearn.feature_extraction.text.CountVectorizer  
 6. 根据词频绘制词云图wordcloud
 
+<<<<<<< HEAD
 
+=======
+ ![词云图](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab7%20ZTE%20Events%20Text%20Analysis/%E8%AF%8D%E4%BA%91%E5%9B%BE/period_1_wordcloud.jpg)
+>>>>>>> 1c4c514660063e76475df2617f5785d2d94d09ad
 ## [Lab4](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab4.ipynb)
 
 - **搜索并保存“中美贸易战”不同时间发布的新闻，用jieba提取关键词**
@@ -71,10 +75,17 @@ feng.li课程作业
 ## [Lab7](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab7%20ZTE%20Events%20Text%20Analysis)
 - **在新浪搜索爬取中兴事件的相关新闻并分时间段提取新闻观点**
 - [preprocess.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab7%20ZTE%20Events%20Text%20Analysis/preprocess.py):对爬取的数据作文本预处理，提取词频，绘制词云图
+<<<<<<< HEAD
 
  ![词云图](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab7%20ZTE%20Events%20Text%20Analysis/%E8%AF%8D%E4%BA%91%E5%9B%BE/period_1_wordcloud.jpg)
 ## [Lab8](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab8%20Probabilistic-Language-Modeling)
 - **对爬取的新闻文本建立Ngram模型和word2vec模型**
 1. [Ngram+word2vec](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab8%20Probabilistic-Language-Modeling/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab8.ipynb)
 1. 利用Ngram模型提取二元词频、并对新闻按时间段分类
+=======
+## [Lab8](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab8%20Probabilistic-Language-Modeling)
+- **对爬取的新闻文本建立Ngram模型和word2vec模型**
+1. [Ngram+word2vec](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab8%20Probabilistic-Language-Modeling/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab8.ipynb)
+1. 利用Nram模型提取二元词频、并对新闻按时间段分类
+>>>>>>> 1c4c514660063e76475df2617f5785d2d94d09ad
 2. 利用word2vec作简单的语义相似度探索
