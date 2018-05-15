@@ -1,7 +1,7 @@
 # Statistical-Case-Studies
 feng.li课程作业
 
-## [Lab1](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab1.ipynb)
+## [Lab1](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab1%20Data%20Structures.ipynb)
 - 1. 读取文本数据、文本数据预处理、统计词频、保存词频表至csv
     - 1.1 Read a text file
     - 1.2 Do the necessary cleaning
@@ -14,7 +14,7 @@ feng.li课程作业
     - 2.3 Convert it to dataframe
     - 2.4 Try some linear algebra（用scipy做矩阵转置、逆、行列式值、最小二乘、广义逆、特征值与特征向量）
 
-## [Lab2](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab2.ipynb)
+## [Lab2](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab2%20Statistical%20Modeling/Lab2%20Statistical%20Modeling.ipynb)
 - 1. 用scipy包的optimize.minimize求似然函数的最大值
     - 1.1 极大似然函数生成正态分布随机数np.random.normal
     - 1.2 定义对数极大似然函数
@@ -28,7 +28,7 @@ feng.li课程作业
     - 2.4 利用python正则表达式去除标点符号、数字、英文字母re.sub
     - 2.5 逐行写入txt、csv文件
 
-## [Lab3](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab3.ipynb)
+## [Lab3](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab3%20English%20Text%20Processing/Lab3%20English%20Text%20Processing.ipynb)
 
 - **用nltk和re做英文文本处理**
 
@@ -41,7 +41,7 @@ feng.li课程作业
 
 ![词云图](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab3%20English%20Text%20Processing/coin_mask.jpg)
 
-## [Lab4](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/%E5%8F%B8%E5%BE%92%E9%9B%AA%E9%A2%96_2017210785_Lab4.ipynb)
+## [Lab4](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab3%20English%20Text%20Processing/Lab3%20English%20Text%20Processing.ipynb)
 
 - **搜索并保存“中美贸易战”不同时间发布的新闻，用jieba提取关键词**
 
@@ -53,12 +53,12 @@ feng.li课程作业
 6. 去除字母、数字、标点、停用词
 7. 提取关键词jieba.analyse.extract_tags
 
-## [Lab5](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/newsSpider/newsSpider/spiders)
+## [Lab5](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab5%20Scraping%20with%20Scrapy/newsSpider/spiders)
 
 - **新浪新闻搜索scrapy spider**
-1. [TradeWar.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/newsSpider/newsSpider/spiders/TradeWar.py):爬取搜索列表上的新闻详细内容
+1. [TradeWar.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab5%20Scraping%20with%20Scrapy/newsSpider/spiders/TradeWar.py):爬取搜索列表上的新闻详细内容
 
-2. [TradeWarList.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/newsSpider/newsSpider/spiders/TradeWarList.py):爬取搜索列表上的新闻摘要
+2. [TradeWarList.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab5%20Scraping%20with%20Scrapy/newsSpider/spiders/TradeWarList.py):爬取搜索列表上的新闻摘要
 
 3. 修改了middlewares.py/items.py/settings.py
 
