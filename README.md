@@ -10,7 +10,7 @@
     - 1.4 Export to csv format
     
 - 2. 读取鸢尾花数据、描述统计、scipy做线性代数运算
-    - 2.1 Read a csv flie
+    - 2.1 Read a csv flie
     - 2.2 Do the description（不使用np、pd的描述统计）
     - 2.3 Convert it to dataframe
     - 2.4 Try some linear algebra（用scipy做矩阵转置、逆、行列式值、最小二乘、广义逆、特征值与特征向量）
@@ -97,4 +97,4 @@
 4. [薪资与技能的回归分析:CaseEx_regression.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/CaseEx_regression.py)
 5. [报告全文:基于LDA的招聘信息中技能要求提取与量化.pdf](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/%E5%9F%BA%E4%BA%8ELDA%E7%9A%84%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF%E4%B8%AD%E6%8A%80%E8%83%BD%E8%A6%81%E6%B1%82%E6%8F%90%E5%8F%96%E4%B8%8E%E9%87%8F%E5%8C%96.pdf)
 
-# The End----------------------------------------------------------
+# 已完结 2018.07.06
