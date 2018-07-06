@@ -97,4 +97,5 @@
 4. [薪资与技能的回归分析:CaseEx_regression.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/CaseEx_regression.py)
 5. [报告全文:基于LDA的招聘信息中技能要求提取与量化.pdf](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/%E5%9F%BA%E4%BA%8ELDA%E7%9A%84%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF%E4%B8%AD%E6%8A%80%E8%83%BD%E8%A6%81%E6%B1%82%E6%8F%90%E5%8F%96%E4%B8%8E%E9%87%8F%E5%8C%96.pdf)
 
-# 已完结 2018.07.06
+![词云图](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/shixiseng.png)
+## 已完结 2018.07.06
