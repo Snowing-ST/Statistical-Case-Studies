@@ -1,5 +1,6 @@
 # Statistical-Case-Studies
-feng.li课程作业
+- 应用统计案例分析课程作业
+- 指导老师：[feng.li](https://github.com/feng-li)
 
 ## [Lab1](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab1%20Data%20Structures.ipynb)
 - 1. 读取文本数据、文本数据预处理、统计词频、保存词频表至csv
@@ -77,6 +78,23 @@ feng.li课程作业
 
 ## [Lab8](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab8%20Probabilistic-Language-Modeling)
 - **对爬取的新闻文本建立Ngram模型和word2vec模型**
-1. [Ngram+word2vec](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab8%20Probabilistic-Language-Modeling/Lab8%20Probabilistic-Language-Modeling.ipynb)
+1. [Probabilistic-Language-Modeling.ipynb](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab8%20Probabilistic-Language-Modeling/Lab8%20Probabilistic-Language-Modeling.ipynb)
 1. 利用Nram模型提取二元词频、并对新闻按时间段分类
 2. 利用word2vec作简单的语义相似度探索
+
+## [Lab9](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab9%20Dynamic%20Topic%20Model%20with%20Visulization)
+- **对爬取的新闻文本建立动态主题模型**
+1. [Dynamic Topic Models.ipynb](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab9%20Dynamic%20Topic%20Model%20with%20Visulization/Lab9%20Dynamic%20Topic%20Models.ipynb)
+2. 动态主题模型:gensim.models.ldaseqmodel
+3. 提取每个时期的关键词
+3. 动态主题模型可视化：pyLDAvis
+
+## [Final Course Report](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA)
+- **基于LDA 的招聘信息中技能要求提取与量化——以实习僧数据分析实习为例**
+1. [实习僧爬虫:CaseEx_CrawlData.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/CaseEx_CrawlData.py)
+2. [文本预处理:CaseEx_preprocess.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/CaseEx_preprocess.py)
+3. [LDA提取并量化职位描述中的技能信息:CaseEx_LDA.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/CaseEx_LDA.py)
+4. [薪资与技能的回归分析:CaseEx_regression.py](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/CaseEx_regression.py)
+5. [报告全文:基于LDA的招聘信息中技能要求提取与量化.pdf](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/%E5%9F%BA%E4%BA%8ELDA%E7%9A%84%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF%E4%B8%AD%E6%8A%80%E8%83%BD%E8%A6%81%E6%B1%82%E6%8F%90%E5%8F%96%E4%B8%8E%E9%87%8F%E5%8C%96.pdf)
+
+# The End----------------------------------------------------------
