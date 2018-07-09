@@ -16,43 +16,43 @@
     - 2.4 Try some linear algebra（用scipy做矩阵转置、逆、行列式值、最小二乘、广义逆、特征值与特征向量）
 
 ## [Lab2](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab2%20Statistical%20Modeling/Lab2%20Statistical%20Modeling.ipynb)
-- 1. 用scipy包的optimize.minimize求似然函数的最大值
-    - 1.1 极大似然函数生成正态分布随机数np.random.normal
+- 1. 用```scipy```包的```optimize.minimize```求似然函数的最大值
+    - 1.1 极大似然函数生成正态分布随机数```np.random.normal```
     - 1.2 定义对数极大似然函数
     - 1.3 给定参数初值
-    - 1.4 最小化负的对数极大似然函数scipy.optimize.minimize
+    - 1.4 最小化负的对数极大似然函数```scipy.optimize.minimize```
 
 - 2. 中文文本处理
     - 2.1 读入2018年政府工作报告txt文件
     - 2.2 去掉只有\n的空行，得到段落
     - 2.3 按照句号和感叹号分隔，去掉\n和空格，得到句子
-    - 2.4 利用python正则表达式去除标点符号、数字、英文字母re.sub
+    - 2.4 利用python正则表达式去除标点符号、数字、英文字母```re.sub```
     - 2.5 逐行写入txt、csv文件
 
 ## [Lab3](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab3%20English%20Text%20Processing/Lab3%20English%20Text%20Processing.ipynb)
 
 - **用nltk和re做英文文本处理**
 
-1. 爬取新华网Business - Finance类别的新闻url  requests.get+json.loads
-2. 对每个url，爬取新闻标题及内容xpath
+1. 爬取新华网Business - Finance类别的新闻url  ```requests.get```+```json.loads```
+2. 对每个url，爬取新闻标题及内容```xpath```
 3. 批量读取新闻文本txt 
-4. 文本预处理nltk+re.sub
-5. 生成文本词频矩阵sklearn.feature_extraction.text.CountVectorizer  
-6. 根据词频绘制词云图wordcloud
+4. 文本预处理```nltk```+```re.sub```
+5. 生成文本词频矩阵```sklearn.feature_extraction.text.CountVectorizer```
+6. 根据词频绘制词云图```wordcloud```
 
 ![词云图](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/Lab3%20English%20Text%20Processing/coin_mask.jpg)
 
 ## [Lab4](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab4%20Chinese%20Text%20Processing/Lab4%20Chinese%20Text%20Processing.ipynb)
 
-- **搜索并保存“中美贸易战”不同时间发布的新闻，用jieba提取关键词**
+- **搜索并保存“中美贸易战”不同时间发布的新闻，用```jieba```提取关键词**
 
 1. 批量读取文件
 2. 提取所有文本数据
-3. 加载自定义词典jieba.load_userdict
-4. 分词jieba.cut
-5. 添加自定义词汇jieba.add_word
+3. 加载自定义词典```jieba.load_userdict```
+4. 分词```jieba.cut```
+5. 添加自定义词汇jieba.add_word```
 6. 去除字母、数字、标点、停用词
-7. 提取关键词jieba.analyse.extract_tags
+7. 提取关键词```jieba.analyse.extract_tags```
 
 ## [Lab5](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab5%20Scraping%20with%20Scrapy/newsSpider/spiders)
 
@@ -85,9 +85,9 @@
 ## [Lab9](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/Lab9%20Dynamic%20Topic%20Model%20with%20Visulization)
 - **对爬取的新闻文本建立动态主题模型**
 1. [Dynamic Topic Models.ipynb](http://nbviewer.jupyter.org/github/Snowing-ST/Statistical-Case-Studies/blob/master/Lab9%20Dynamic%20Topic%20Model%20with%20Visulization/Lab9%20Dynamic%20Topic%20Models.ipynb)
-2. 动态主题模型:gensim.models.ldaseqmodel
+2. 动态主题模型:```gensim.models.ldaseqmodel```
 3. 提取每个时期的关键词
-3. 动态主题模型可视化：pyLDAvis
+3. 动态主题模型可视化：```pyLDAvis```
 
 ## [Final Course Report](https://github.com/Snowing-ST/Statistical-Case-Studies/tree/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA)
 - **基于LDA 的招聘信息中技能要求提取与量化——以实习僧数据分析实习为例**
@@ -101,4 +101,4 @@
 ![LDA可视化](https://github.com/Snowing-ST/Statistical-Case-Studies/blob/master/CaseEx%20Extract%20Skill%20Imformation%20with%20LDA/shixiseng.png)
 
 
-## 已完结 2018.07.06
+------------------- 已完结 2018.07.06 ----------------------
