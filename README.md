@@ -50,7 +50,7 @@
 2. 提取所有文本数据
 3. 加载自定义词典```jieba.load_userdict```
 4. 分词```jieba.cut```
-5. 添加自定义词汇jieba.add_word```
+5. 添加自定义词汇```jieba.add_word```
 6. 去除字母、数字、标点、停用词
 7. 提取关键词```jieba.analyse.extract_tags```
 
