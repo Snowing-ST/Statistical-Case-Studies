@@ -24,7 +24,10 @@ def crawl(para):
     word = urlencode(d)
     newsData = pd.DataFrame()
     for i in list(range(startpage,startpage+n)):
-        url = 'http://search.sina.com.cn/?%s&range=all&c=news&num=20&col=1_7&page=%s' % (word, str(i))
+        print("--------------正在爬取第"+str(i)+"页新闻----------------")
+#        url = 'http://search.sina.com.cn/?%s&range=all&c=news&sort=rel&num=20&col=1_7&page=%s' % (word, str(i))
+        #按相关度排序，指定了时间范围
+        url = "http://search.sina.com.cn/?c=news&%s&range=all&time=custom&stime=2018-04-16&etime=2018-05-19&num=10&sort=rel&page=%s" % (word, str(i))
         result = requests.get(url)
         result.encoding = 'gbk'
         selector = etree.HTML(result.text)  
@@ -34,33 +37,52 @@ def crawl(para):
             onenews = pd.DataFrame(newsdict)
 #            onenews = pd.DataFrame(np.zeros(8).tolist(),
 #                                   columns=["title","date","time","source","abstract","detail","href","orgin_url"])
-            onenews["title"] = item.xpath('h2/a')[0].xpath("string(.)")
+            try:
+                onenews["title"] = item.xpath('h2/a')[0].xpath("string(.)")
+            except:
+                onenews["title"] = ""
             print(onenews["title"][0])
-            onenews["abstract"]  = item.xpath('p')[0].xpath("string(.)")
-            otherinfo = item.xpath('h2/span/text()')[0]
+            try:
+                onenews["abstract"]  = item.xpath('p')[0].xpath("string(.)")
+            except:
+                onenews["abstract"] = ""
+            try:
+                otherinfo = item.xpath('h2/span/text()')[0]
+            except:
+                otherinfo = "NA NA NA"
             onenews["source"] , onenews["date"] , onenews["time"]  = otherinfo.split()
-            onenews["href"]  = item.xpath('h2/a/@href')[0]
+            try:
+                onenews["href"]  = item.xpath('h2/a/@href')[0]
+            except:
+                onenews["href"]  = ""
             onenews["origin_url"] ,onenews["detail"] = crawl_con(onenews["href"][0])
             newsData = newsData.append(onenews)
     newsData.to_csv(compRawStr+"_"+str(startpage)+"_"+str(n)+"相关新闻.csv",index = False,encoding = "gb18030")
 
 def crawl_con(href):
-    site = requests.get(href)
-    site=site.content
-    response = etree.HTML(site)
-    try:
-        origin_url = response.xpath('//*[@id="top_bar"]/div/div[2]/a/@href')[0] 
-        detail = "\n".join(response.xpath('//div[@class="article"]/div/p/text()'))+"\n".join(response.xpath('//div[@class="article"]/p/text()'))+"\n".join(response.xpath('//div[@class="article"]/div/div/text()'))
-    except:
-        origin_url =""
-        detail =""
-    detail = re.sub('\u3000', '', detail)    #全角的空白符
-    return origin_url,detail
+    """爬取新闻详情"""
+    if href!="":
+        site = requests.get(href)
+        site=site.content
+        response = etree.HTML(site)
+        try:
+            origin_url = response.xpath('//*[@id="top_bar"]/div/div[2]/a/@href')[0] 
+        except:
+            origin_url =""
+        detail = "\n".join(response.xpath('//div[@class="article"]/div/p/text()'))+\
+                "\n".join(response.xpath('//div[@class="article"]/p/text()'))+\
+                "\n".join(response.xpath('//div[@class="article"]/div/div/text()'))+\
+                "\n".join(response.xpath('//*[@id="artibody"]/p/text()'))
+        detail = re.sub('\u3000', '', detail)    #全角的空白符
+        return origin_url,detail
+    else:
+        return "",""
+
 
 
 
 if __name__=='__main__':
-    os.chdir("E:/graduate/class/Statistical Case Studies/homework6")
+    os.chdir("E:/graduate/class/Statistical Case Studies/homework9")
     print('请输入您想爬取内容的关键字：')
     compRawStr = input('关键字1 关键字2： \n')     #键盘读入 多个关键字则用空格隔开
     PageN = input('起始页,页数： \n')     #如键盘读入 1,5 1,5
@@ -79,13 +101,12 @@ if __name__=='__main__':
         l=3
         sp,n = [int(i) for i in pn[0].split(",")]
         sep = int(round(n/l,0))
-        para = [[comp[0],sp,sep],[comp[0],sp+sep,sep],[comp[0],sp+2*sep,n-(sp+2*sep)]]
+        para = [[comp[0],sp,sep],[comp[0],sp+sep,sep],[comp[0],sp+2*sep,n-sp-2*sep]]
     p=Pool(l)
     p.map(crawl,para)       #爬取4页内容
     p.close()
     p.join()
     print("爬取成功，请打开"+os.getcwd()+"查看详情")
-
 
 
 
